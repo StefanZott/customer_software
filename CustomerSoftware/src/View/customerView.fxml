@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="340.0" prefWidth="337.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CustomerViewController">
+   <center>
+      <VBox prefHeight="340.0" prefWidth="385.0" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane prefHeight="114.0" prefWidth="337.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="164.0" minWidth="10.0" prefWidth="93.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="227.0" minWidth="0.0" prefWidth="82.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="227.0" minWidth="10.0" prefWidth="88.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="227.0" minWidth="10.0" prefWidth="93.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="41.0" prefWidth="173.0" text="Kundennummer:" textFill="#1e1d1d" />
+                  <Label alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="110.0" text="Vorname:" GridPane.rowIndex="1" />
+                  <Label alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="110.0" text="Nachname:" GridPane.rowIndex="2" />
+                  <Label alignment="CENTER_RIGHT" prefHeight="32.0" prefWidth="88.0" text="E-Mail:" GridPane.rowIndex="3" />
+                  <Label alignment="CENTER_RIGHT" prefHeight="39.0" prefWidth="83.0" text="Straße:" GridPane.columnIndex="2" />
+                  <Label alignment="CENTER_RIGHT" prefHeight="32.0" prefWidth="83.0" text="Hausnummer:" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Label alignment="CENTER_RIGHT" prefHeight="31.0" prefWidth="83.0" text="PLZ:" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <Label alignment="CENTER_RIGHT" prefHeight="32.0" prefWidth="83.0" text="Ort:" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <Label fx:id="customerID" prefHeight="49.0" prefWidth="77.0" GridPane.columnIndex="1" />
+                  <Label fx:id="firstname" prefHeight="39.0" prefWidth="77.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label fx:id="lastname" prefHeight="52.0" prefWidth="77.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label fx:id="email" prefHeight="50.0" prefWidth="77.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label fx:id="street" prefHeight="50.0" prefWidth="89.0" GridPane.columnIndex="3" />
+                  <Label fx:id="houseNumber" prefHeight="40.0" prefWidth="89.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <Label fx:id="postCode" prefHeight="61.0" prefWidth="89.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <Label fx:id="place" prefHeight="50.0" prefWidth="89.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
